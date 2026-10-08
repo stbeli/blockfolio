@@ -1,0 +1,165 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 3,
+    "settings": {
+		"appearanceTools": false,
+		"useRootPaddingAwareAlignments": false,
+        "color": {
+            "palette": [
+                {
+                    "name": "Black",
+                    "slug": "black",
+                    "color": "#000000"
+                },
+                {
+                    "name": "White",
+                    "slug": "white",
+                    "color": "#ffffff"
+                },
+                {
+                    "name": "Link Blue",
+                    "slug": "link-blue",
+                    "color": "#1155cc"
+                },
+                {
+                    "name": "Border Gray",
+                    "slug": "border-gray",
+                    "color": "#dadce0"
+                },
+                {
+                    "name": "Muted Gray",
+                    "slug": "muted-gray",
+                    "color": "#5f6368"
+                },
+                {
+                    "name": "Text Gray",
+                    "slug": "text-gray",
+                    "color": "#3c4043"
+                }
+            ]
+        },
+        "spacing": {
+            "blockGap": true,
+            "customSpacingSize": true
+        },
+        "typography": {
+        "fontFamilies": [
+            {
+                "fontFamily": "\"Noto Sans\", sans-serif",
+                "name": "Noto Sans",
+                "slug": "noto-sans",
+                "fontFace": [
+                    {
+                    "fontFamily": "Noto Sans",
+                    "fontStyle": "normal",
+                    "fontWeight": "400",
+                    "fontDisplay": "swap",
+                    "src": [
+                        "file:./assets/fonts/noto-sans-v42-latin-regular.woff2"
+                    ]
+                    },
+                    {
+                    "fontFamily": "Noto Sans",
+                    "fontStyle": "italic",
+                    "fontWeight": "400",
+                    "fontDisplay": "swap",
+                    "src": [
+                        "file:./assets/fonts/noto-sans-v42-latin-italic.woff2"
+                    ]
+                    },
+                    {
+                    "fontFamily": "Noto Sans",
+                    "fontStyle": "italic",
+                    "fontWeight": "700",
+                    "fontDisplay": "swap",
+                    "src": [
+                        "file:./assets/fonts/noto-sans-v42-latin-700italic.woff2"
+                    ]
+                    },
+                    {
+                    "fontFamily": "Noto Sans",
+                    "fontStyle": "normal",
+                    "fontWeight": "900",
+                    "fontDisplay": "swap",
+                    "src": [
+                        "file:./assets/fonts/noto-sans-v42-latin-900.woff2"
+                    ]
+                    }
+                ]
+                }
+            ],
+            "fontSizes": [
+                { "name": "Small", "slug": "small", "size": "13px" },
+                { "name": "Body", "slug": "body", "size": "15px" },
+                { "name": "Title", "slug": "title", "size": "48px" },
+                { "name": "Subtitle", "slug": "subtitle", "size": "20px" },
+                { "name": "Heading 3", "slug": "heading-3", "size": "15px" }
+            ]
+        },
+        "layout": {
+            "contentSize": "794px",
+            "wideSize": "960px"
+        }
+    },
+    "styles": {
+        "color": {
+            "text": "var:preset|color|black",
+            "background": "var:preset|color|white"
+        },
+        "typography": {
+            "fontFamily": "var:preset|font-family|noto-sans",
+            "fontSize": "var:preset|font-size|body",
+            "lineHeight": "1.25"
+        },
+        "elements": {
+            "link": {
+                "typography": {
+                    "textDecoration": "underline"
+                },
+                "color": {
+                    "text": "var:preset|color|link-blue"
+                },
+                ":hover": {
+                    "color": {
+                        "text": "var:preset|color|link-blue"
+                    }
+                }
+            },
+            "h1": {
+                "typography": {
+                    "fontSize": "var:preset|font-size|title",
+                    "fontWeight": "900",
+                    "letterSpacing": "0.1em",
+                    "lineHeight": "1",
+                    "textAlign": "center",
+                    "textTransform": "uppercase"
+                }
+            },
+            "h2": {
+                "typography": {
+                    "fontSize": "var:preset|font-size|subtitle",
+                    "fontWeight": "400",
+                    "letterSpacing": "0.1em",
+                    "lineHeight": "1",
+                    "textAlign": "center",
+                    "textTransform": "uppercase"
+                }
+            },
+            "h3": {
+                "typography": {
+                    "fontSize": "var:preset|font-size|heading-3",
+                    "fontWeight": "400",
+                    "lineHeight": "1"
+                }
+            }
+        }
+    },
+    "customTemplates": [],
+    "patterns": [],
+    "templateParts": [
+        { "name": "header", "title": "Header", "area": "header" },
+        { "name": "sidebar-toc", "title": "Table of Contents", "area": "blockfolio" },
+        { "name": "sidebar-portfolio", "title": "Portfolio", "area": "blockfolio" },
+        { "name": "footer", "title": "Footer", "area": "footer" }
+    ]
+}

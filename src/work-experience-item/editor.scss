@@ -1,0 +1,53 @@
+@use '../shared/colors';
+@use '../shared/mixins';
+
+// Editor-only controls: icon picker, employment period fields, company link.
+.blockfolio-work-experience-item {
+	&__icon-control {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+
+	&__icon-button {
+		padding: 0;
+		border: none;
+		background: none;
+		cursor: pointer;
+		line-height: 0;
+
+		img {
+			@include mixins.icon-thumbnail;
+		}
+	}
+
+	&__period-fields {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		flex-wrap: wrap;
+	}
+
+	&__date-input,
+	&__company-link-input {
+		border: 1px solid colors.$border;
+		border-radius: 4px;
+		padding: 4px 8px;
+		font-size: 13px;
+		color: colors.$muted;
+	}
+
+	&__company-link-input {
+		min-width: 220px;
+	}
+
+	&__date-sep {
+		color: colors.$muted;
+	}
+
+	&__current-label {
+		font-size: 13px;
+		color: colors.$muted;
+		font-style: italic;
+	}
+}

@@ -1,0 +1,12 @@
+// Shared SCSS mixins used across the Blockfolio custom blocks.
+
+// Round thumbnail used for the "Work Experience" header icon, both once it's
+// saved (an <img>) and while picking it in the editor (inside a <button>).
+@mixin icon-thumbnail {
+	width: 48px;
+	height: 48px;
+	object-fit: cover;
+	border-radius: 50%;
+	flex-shrink: 0;
+	display: block;
+}

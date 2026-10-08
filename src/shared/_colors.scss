@@ -1,0 +1,8 @@
+// Shared SCSS color tokens used across the Blockfolio custom blocks, mapped
+// to the theme's global color palette (theme.json > settings.color.palette)
+// so they stay in sync with Site Editor > Styles > Colors.
+$border: var(--wp--preset--color--border-gray);
+$muted: var(--wp--preset--color--muted-gray);
+$text: var(--wp--preset--color--text-gray);
+$link: var(--wp--preset--color--link-blue);
+$black: var(--wp--preset--color--black);

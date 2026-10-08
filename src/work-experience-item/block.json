@@ -1,0 +1,59 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blockfolio/work-experience-item",
+	"title": "Company",
+	"category": "blockfolio",
+	"icon": "building",
+	"description": "One work experience item: company name, role, employment period, and description.",
+	"textdomain": "blockfolio",
+	"parent": [ "blockfolio/work-experience" ],
+	"attributes": {
+		"icon": {
+			"type": "string",
+			"default": ""
+		},
+		"iconId": {
+			"type": "number",
+			"default": 0
+		},
+		"company": {
+			"type": "string",
+			"default": "Company Name"
+		},
+		"companyDescription": {
+			"type": "string",
+			"default": "Company Description"
+		},
+		"companyUrl": {
+			"type": "string",
+			"default": "https://"
+		},
+		"role": {
+			"type": "string",
+			"default": ""
+		},
+		"startDate": {
+			"type": "string",
+			"default": ""
+		},
+		"endDate": {
+			"type": "string",
+			"default": ""
+		},
+		"current": {
+			"type": "boolean",
+			"default": false
+		},
+		"description": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}

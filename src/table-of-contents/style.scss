@@ -1,0 +1,77 @@
+@use '../shared/colors';
+
+// Smooth-scrolls to a heading's anchor when a table-of-contents link is
+// clicked, and keeps the target heading from hiding behind sticky chrome.
+html {
+	scroll-behavior: smooth;
+}
+
+h1[id],
+h2[id],
+h3[id],
+h4[id],
+h5[id],
+h6[id] {
+	scroll-margin-top: 24px;
+}
+
+.blockfolio-toc {
+	box-sizing: border-box;
+	position: sticky;
+	top: 0;
+	max-height: 100vh;
+	overflow-y: auto;
+	padding: 64px 16px 32px 32px;
+
+	&:empty {
+		display: none;
+	}
+
+	&__label {
+		margin: 0 0 8px;
+		color: colors.$muted;
+		font-size: 11px;
+		font-weight: 600;
+		letter-spacing: 0.8px;
+		text-transform: uppercase;
+	}
+
+	&__placeholder {
+		margin: 0;
+		color: colors.$muted;
+		font-size: 12px;
+		font-style: italic;
+	}
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	&__item {
+		padding-inline-start: calc(var(--blockfolio-toc-depth, 0) * 14px);
+
+		a {
+			display: block;
+			padding: 6px 10px;
+			border-radius: 4px;
+			color: colors.$muted;
+			font-size: 13px;
+			line-height: 1.4;
+			text-decoration: none;
+
+			&:hover,
+			&:focus {
+				background-color: #f1f3f4;
+				color: colors.$black;
+			}
+		}
+	}
+}
+
+@media (max-width: 782px) {
+	.blockfolio-toc {
+		display: none;
+	}
+}

@@ -1,0 +1,78 @@
+@use '../shared/colors';
+@use '../shared/mixins';
+
+.blockfolio-work-experience-item {
+	padding-bottom: 24px;
+	border-bottom: 1px solid colors.$border;
+
+	&:last-child {
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+
+	&__header {
+		display: flex;
+		align-items: flex-start;
+		gap: 12px;
+	}
+
+	&__header-fields {
+		flex: 1 1 auto;
+		min-width: 0;
+	}
+
+	&__icon {
+		@include mixins.icon-thumbnail;
+	}
+
+	&__row {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+		gap: 16px;
+		flex-wrap: wrap;
+	}
+
+	&__role {
+		margin: 0;
+		font-weight: 600;
+		flex: 1 1 auto;
+	}
+
+	&__period {
+		margin: 0;
+		color: colors.$muted;
+		font-size: 13px;
+		white-space: nowrap;
+		text-align: right;
+	}
+
+	&__company-group {
+		margin: 4px 0 0;
+		font-style: italic;
+		color: colors.$text;
+		flex: 1 1 auto;
+	}
+
+	&__company-sep {
+		margin: 0 6px;
+	}
+
+	&__company-link {
+		margin: 4px 0 0;
+		font-size: 13px;
+		color: colors.$link;
+		text-decoration: underline;
+		white-space: nowrap;
+		text-align: right;
+	}
+
+	&__description {
+		margin: 12px 0 0;
+		padding-inline-start: 20px;
+
+		li + li {
+			margin-top: 4px;
+		}
+	}
+}

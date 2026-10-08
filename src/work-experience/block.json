@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blockfolio/work-experience",
+	"title": "Work Experience",
+	"category": "blockfolio",
+	"icon": "businessperson",
+	"description": "List of companies you have worked for, with descriptions and dates. You can add and remove companies as needed.",
+	"keywords": [ "work", "experience", "cv" ],
+	"textdomain": "blockfolio",
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "Work Experience"
+		}
+	},
+	"supports": {
+		"html": false,
+		"align": [ "wide", "full" ]
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css"
+}

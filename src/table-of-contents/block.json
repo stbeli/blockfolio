@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blockfolio/table-of-contents",
+	"title": "Table of Contents",
+	"category": "blockfolio",
+	"icon": "list-view",
+	"description": "Auto-generated table of contents built from the page's headings, shown like a Google Docs outline.",
+	"keywords": [ "contents", "outline", "headings" ],
+	"textdomain": "blockfolio",
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "Contents"
+		}
+	},
+	"supports": {
+		"html": false,
+		"multiple": false
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}

@@ -1,0 +1,44 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"blockTypes": [ "core/button" ],
+	"slug": "noborder",
+	"title": "No Border",
+	"styles": {
+		"border": {
+			"width": "0px",
+			"style": "none",
+			"radius": "0px"
+		},
+		"color": {
+			"background": "transparent",
+			"text": "var:preset|color|text-gray"
+		},
+		"spacing": {
+			"padding": {
+				"top": "0",
+				"right": "0",
+				"bottom": "0",
+				"left": "0"
+			}
+		},
+		":hover": {
+			"color": {
+				"background": "transparent",
+				"text": "var:preset|color|link-blue"
+			},
+			"typography": {
+				"textDecoration": "underline"
+			}
+		},
+		":focus": {
+			"color": {
+				"background": "transparent",
+				"text": "var:preset|color|link-blue"
+			},
+			"typography": {
+				"textDecoration": "underline"
+			}
+		}
+	}
+}
