@@ -20,20 +20,18 @@ Tags: three-columns, custom-colors, custom-menu, custom-logo, editor-style, feat
 	background-color: #b4d7ff;
 }
 
-.blockfolio-page {
-	flex-grow: 1;
-	min-width: 0;
-	padding: 64px clamp(24px, 6vw, 96px) 96px;
-}
-
-@media (max-width: 782px) {
-	.blockfolio-page {
-		padding: 32px 20px 64px;
-	}
-}
-
 /* Fallback for "list-skills" lists that don't set their own per-block CSS. */
 .wp-block-list.list-skills li span {
-	min-width: 100px;
+	min-width: 80px;
 	display: inline-block;
+}
+
+.lh-metrics-container {
+    gap: 8px;
+}
+
+.lh-metric {
+    border: 0;
+    background-color: #f2f2f2;
+    border-radius: 4px;
 }
